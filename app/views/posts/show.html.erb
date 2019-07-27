@@ -3,9 +3,10 @@
 <p> <%= @post.content %> </p>
 
 Categories:  <% @post.categories.each do |category| %>
-  <li> <%= category.name %> </li>
-  <% end %>
-
+                    <li> <%= category.name %> </li>
+             <% end %>
+<br>
+<br>
  Comments:  <% @post.comments.each do |comment| %>
- <li <%= comment.content %> </li>
- <% end %>
+                  <li> <%= comment.content %> </li>
+            <% end %>
