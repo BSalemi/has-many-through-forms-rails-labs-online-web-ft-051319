@@ -10,3 +10,8 @@ Categories:  <% @post.categories.each do |category| %>
  Comments:  <% @post.comments.each do |comment| %>
                   <li> <%= comment.content %> </li>
             <% end %>
+<br>
+<br>
+Users:   <% @post.users.map do |user| %>
+          <li> <%= user.username %> </li>
+          <% end.uniq %>
