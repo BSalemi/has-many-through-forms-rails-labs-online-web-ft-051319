@@ -24,3 +24,11 @@ Users:  <br>
     <li> <%= user.username %> </li>
   <% end.uniq %>
 <ul>
+<br>
+<br>
+Add Comment: <br>
+<%= form_for @comment do |f| %>
+<%= f.label :content %>
+<%= f.text_area :content %>
+<%= f.submit %>
+<% end %>
