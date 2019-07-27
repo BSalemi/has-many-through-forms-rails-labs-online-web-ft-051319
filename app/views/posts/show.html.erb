@@ -2,9 +2,12 @@
 
 <p> <%= @post.content %> </p>
 
-Categories:  <ul><% @post.categories.each do |category| %>
-                    <li> <%= category.name %> </li>
-             <% end %></ul>
+Categories: <br>
+ <ul>
+   <% @post.categories.each do |category| %>
+      <li> <%= category.name %> </li>
+   <% end %>
+ </ul>
 <br>
 <br>
  Comments:  <% @post.comments.each do |comment| %>
