@@ -2,6 +2,8 @@
 
 <p> <%= @post.content %> </p>
 
-  <% @post.categories.each do |category| %>
+Categories:  <% @post.categories.each do |category| %>
   <li> <%= category.name %> </li>
   <% end %>
+
+  <%
